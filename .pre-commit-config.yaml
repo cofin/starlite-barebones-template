@@ -1,0 +1,34 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: check-executables-have-shebangs
+    -   id: check-json
+    -   id: check-yaml
+    -   id: destroyed-symlinks
+    -   id: detect-private-key
+    -   id: end-of-file-fixer
+    -   id: fix-encoding-pragma
+    -   id: sort-simple-yaml
+    -   id: trailing-whitespace
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.11.4
+    hooks:
+      - id: isort
+        args: ["--profile", "black", "--filter-files"]
+  - repo: https://github.com/psf/black
+    rev: 22.12.0
+    hooks:
+      - id: black
+        args: [--config=./pyproject.toml]
+  - repo: https://github.com/charliermarsh/ruff-pre-commit
+    rev: 'v0.0.217'
+    hooks:
+      - id: ruff
+        args: ["--force-exclude"]
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.2
+    hooks:
+    - id: codespell
+      additional_dependencies:
+        - tomli

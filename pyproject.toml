@@ -1,0 +1,90 @@
+[tool.poetry]
+name = "starlite-barebones-template"
+version = "1.0.0"
+description = "Starlite API barebones template project"
+authors = ["Jacob Coffee <jacob@z7x.org>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/JacobCoffee/starlite-barebones-template"
+#packages = [
+#    {include = "app", from = "app"},
+#]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+starlite = "^1.50.1"
+uvicorn = "*"
+python-dotenv = "*"
+structlog = "*"
+msgspec = "*"
+pydantic = "*"
+
+# Optional Addons
+# usage: `poetry install -E ${addon_1} -e ${addon_2}` or `poetry install`
+saq = {version = "*", optional = true}
+asyncpg =  {version = "*", optional = true}
+sqlalchemy = {version = "*", optional = true}
+redis = {version = "*", optional = true}
+
+[tool.poetry.extras]
+cache = ["redis"]
+worker = ["saq"]
+db = ["sqlalchemy", "asyncpg"]
+all = ["redis", "saq", "sqlalchemy"]
+
+[tool.poetry.group.dev.dependencies]
+coverage = {extras = ["toml"], version = "*"}
+cython = "*"
+pytest = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+pytest-docker = "*"
+pytest-dotenv = "*"
+pytest-mock = "*"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "*"
+piccolo-theme = "*"
+sphinx-autobuild = "*"
+sphinx-copybutton = "*"
+
+[tool.poetry.group.lint]
+optional = true
+
+[tool.poetry.group.lint.dependencies]
+black = "*"
+isort = "*"
+ruff = "*"
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+exclude = '''
+/(
+    \.git
+  | \.ruff_cache
+  | venv
+  | \.venv
+)/
+'''
+line-length = 120
+
+[tool.isort]
+line_length = 119
+multi_line_output = 3
+profile = "black"
+skip_gitignore = true
+src_paths = ["app/"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.codespell]
+count = ''
+quiet-level = 3
