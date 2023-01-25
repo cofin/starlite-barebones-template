@@ -6,9 +6,9 @@ authors = ["Jacob Coffee <jacob@z7x.org>"]
 license = "Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/JacobCoffee/starlite-barebones-template"
-#packages = [
-#    {include = "app", from = "app"},
-#]
+packages = [
+    {include = "app", from = "app"},
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -30,7 +30,7 @@ redis = {version = "*", optional = true}
 cache = ["redis"]
 worker = ["saq"]
 db = ["sqlalchemy", "asyncpg"]
-all = ["redis", "saq", "sqlalchemy"]
+all = ["redis", "saq", "sqlalchemy", "asyncpg"]
 
 [tool.poetry.group.dev.dependencies]
 coverage = {extras = ["toml"], version = "*"}

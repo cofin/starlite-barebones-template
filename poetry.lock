@@ -2007,7 +2007,7 @@ docs = ["proselint (>=0.13)", "sphinx (>=5.3)", "sphinx-argparse (>=0.3.2)", "sp
 testing = ["coverage (>=6.2)", "coverage-enable-subprocess (>=1)", "flaky (>=3.7)", "packaging (>=21.3)", "pytest (>=7.0.1)", "pytest-env (>=0.6.2)", "pytest-freezegun (>=0.4.2)", "pytest-mock (>=3.6.1)", "pytest-randomly (>=3.10.3)", "pytest-timeout (>=2.1)"]
 
 [extras]
-all = ["redis", "saq", "sqlalchemy"]
+all = ["redis", "saq", "sqlalchemy", "asyncpg"]
 cache = ["redis"]
 db = ["sqlalchemy", "asyncpg"]
 worker = ["saq"]
@@ -2015,4 +2015,4 @@ worker = ["saq"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "b6a27197bd961f60b2681717bfc6faa0e73e3148b71dc96cb1d04ca1db8931f5"
+content-hash = "83b9bafcdc3df60cabad8ef0b4327b0d3f5007687ef9a3df852ea42b0273c0be"
