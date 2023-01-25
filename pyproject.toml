@@ -20,7 +20,7 @@ msgspec = "*"
 pydantic = "*"
 
 # Optional Addons
-# usage: `poetry install -E ${addon_1} -e ${addon_2}` or `poetry install`
+# usage example: `poetry install -E db -E worker` or `poetry install -E all` for all addons
 saq = {version = "*", optional = true}
 asyncpg =  {version = "*", optional = true}
 sqlalchemy = {version = "*", optional = true}
