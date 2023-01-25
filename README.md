@@ -15,3 +15,17 @@ Optional Extras:
 - [saq](https://github.com/tobymao/saq/) with `poetry install --with worker`
 - [sqlalchemy](https://www.sqlalchemy.org/) , [asyncpg](https://magicstack.github.io/asyncpg/) with `poetry install --with db` 
 - all extras with `poetry install --all-extras`
+
+___
+### Documentation
+All documentation is generated under the `/docs` folder
+
+To run or build the docs locally, you need to first install the required dependencies:
+
+`poetry install --with docs`
+
+Then you can serve the documentation with `make docs-serve`, or (re)build them with `make docs`
+
+___
+# Contributing
+To contribute to this project, please read the [contributing guidelines](CONTRIBUTING.md).
