@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Basic application for Starlite ASGI Framework"""
 from starlite import Starlite, get
 

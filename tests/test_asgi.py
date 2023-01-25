@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """Tests for asgi.py"""
 from starlite.status_codes import HTTP_200_OK
 from starlite.testing import TestClient
