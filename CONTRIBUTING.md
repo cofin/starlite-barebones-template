@@ -35,4 +35,4 @@ Then you can serve the documentation with `make docs-serve`, or (re)build them w
 
 ### Checking Test Coverage
 
-You can check the unit test coverage by running: `$ poetry run pytest tests --cov=app`
+You can check the unit test coverage by running: `make test`
