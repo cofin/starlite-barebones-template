@@ -2,7 +2,7 @@
 
 ## WIP
 
-Provides a baasic template for a Starlite API Framework project including these options out-of-the-box:
+Provides a basic template for a Starlite API Framework project including these options out-of-the-box:
 - [x] Starlite API Framework
 - [x] `uvicorn`
 - [x] `python-dotenv`
@@ -12,6 +12,6 @@ Provides a baasic template for a Starlite API Framework project including these 
 
 Optional Extras:
 - [redis](https://redis.io/) with `poetry install --with cache`
-- [saq](https://github.com/tobymao/saq) with `poetry install --with worker`
+- [saq](https://github.com/tobymao/saq/) with `poetry install --with worker`
 - [sqlalchemy](https://www.sqlalchemy.org/) , [asyncpg](https://magicstack.github.io/asyncpg/) with `poetry install --with db` 
 - all extras with `poetry install --all-extras`
