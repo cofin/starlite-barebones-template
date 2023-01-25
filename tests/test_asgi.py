@@ -6,7 +6,7 @@ from starlite.testing import TestClient
 from app import asgi
 
 
-def test_basic_example() -> None:
+def test_asgi_hello_world() -> None:
     """Test the basic hello-world endpoint"""
     with TestClient(app=asgi.app) as client:
         response = client.get("/")
