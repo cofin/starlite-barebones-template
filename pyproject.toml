@@ -19,8 +19,9 @@ structlog = "*"
 msgspec = "*"
 pydantic = "*"
 
-# Optional Addons
-# usage example: `poetry install -E db -E worker` or `poetry install -E all` for all addons
+# ================= #
+#  Optional Addons  #
+# ================= #
 saq = {version = "*", optional = true}
 asyncpg =  {version = "*", optional = true}
 sqlalchemy = {version = "*", optional = true}
