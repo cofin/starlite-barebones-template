@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "starlite-barebones-template"
-version = "1.0.0"
+version = "0.0.0-post.10+70c37f2"
 description = "Starlite API barebones template project"
 authors = ["Jacob Coffee <jacob@z7x.org>"]
 license = "Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/JacobCoffee/starlite-barebones-template"
 packages = [
-    {include = "app", from = "app"},
+    {include = "app"},
 ]
 
 [tool.poetry.dependencies]
@@ -60,9 +60,14 @@ isort = "*"
 ruff = "*"
 pre-commit = "*"
 
+[tool.poetry-dynamic-versioning]
+enable = true
+vcs = "git"
+style = "semver"
+
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
 
 [tool.black]
 exclude = '''
