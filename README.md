@@ -1,5 +1,5 @@
 # [Starlite API Framework](https://github.com/starlite-api/starlite) Barebones Template
-__version__: 1.0.0
+Version: 0.1.0
 
 ## WIP
 
