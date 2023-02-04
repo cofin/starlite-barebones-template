@@ -11,6 +11,9 @@
 - [x] `structlog`
 - [x] `msgspec`
 - [x] `pydantic`
+- [x] GitHub Actions
+  - [x] `Testing`
+  - [x] Document Generation
 
 #### Optional Extras:
 - [redis](https://redis.io/) with `poetry install --with cache`
