@@ -31,30 +31,30 @@ Usage:
   make <target>
 
   Targets:
-      help             Display Help for Makefile
-      upgrade          Upgrade all dependencies to the latest stable versions
+      help                  Display Help for Makefile
+      upgrade               Upgrade all dependencies to the latest stable versions
 
-      coverage         Run coverage report
-      lint             run pre-commit hooks; includes ruff linting
-      test             Run tests with coverage
-      pytest           Run tests using pytest directly
+      coverage              Run coverage report
+      lint                  run pre-commit hooks; includes ruff linting
+      test                  Run tests with coverage
+      pytest                Run tests using pytest directly
 
-      install          Install in Dev Mode
-      runtime-only     Install in Prod Mode
-      migrations       Run DB Migrations
-      migrate          Migrate DB
-      squash-migrations  Squash DB Migrations
-      clean            File Cleanup
+      install               Install in Dev Mode
+      runtime-only          Install in Prod Mode
+      migrations            Run DB Migrations
+      migrate               Migrate DB
+      squash-migrations     Squash DB Migrations
+      clean                 File Cleanup
 
       download-backend-deps  Get Dependencies for Backend
-      build-frontend   Build Dependencies for Frontend; includes API schema and tailwind
-      build-backend    Build Dependencies for Backend using poetry
-      build            Build Backend and Frontend
-      pre-release      Run the pre-release cycle; builds docs, cleans stale files, bumps version
+      build-frontend          Build Dependencies for Frontend; includes API schema and tailwind
+      build-backend           Build Dependencies for Backend using poetry
+      build                   Build Backend and Frontend
+      pre-release             Run the pre-release cycle; builds docs, cleans stale files, bumps version
 
-      docs-clean       Dump the existing built docs
-      docs-serve       Serve the docs locally
-      docs             Dump the existing built docs and rebuild them
+      docs-clean              Dump the existing built docs
+      docs-serve              Serve the docs locally
+      docs                    Dump the existing built docs and rebuild them
 ```
 
 
