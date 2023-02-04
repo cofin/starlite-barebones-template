@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "starlite-barebones-template"
-version = "0.0.0-post.10+70c37f2"
+version = "0.1.0"
 description = "Starlite API barebones template project"
 authors = ["Jacob Coffee <jacob@z7x.org>"]
 license = "Apache-2.0"
@@ -26,6 +26,7 @@ saq = {version = "*", optional = true}
 asyncpg =  {version = "*", optional = true}
 sqlalchemy = {version = "*", optional = true}
 redis = {version = "*", optional = true}
+isort = "^5.12.0"
 
 [tool.poetry.extras]
 cache = ["redis"]
@@ -43,15 +44,6 @@ pytest-docker = "*"
 pytest-dotenv = "*"
 pytest-mock = "*"
 
-[tool.poetry.group.docs]
-optional = true
-
-[tool.poetry.group.docs.dependencies]
-sphinx = "*"
-piccolo-theme = "*"
-sphinx-autobuild = "*"
-sphinx-copybutton = "*"
-
 [tool.poetry.group.lint]
 optional = true
 
@@ -60,6 +52,13 @@ black = "*"
 isort = "*"
 ruff = "*"
 pre-commit = "*"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.2"
+mkdocs-material = "^9.0.11"
+mkdocstrings = "^0.20.0"
+mkdocstrings-python = "^0.8.3"
 
 [tool.poetry-dynamic-versioning]
 enable = true

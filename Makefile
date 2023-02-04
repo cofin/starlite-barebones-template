@@ -5,6 +5,7 @@
 .ONESHELL:
 ENV_PREFIX=$(shell python3 -c "if __import__('pathlib').Path('.venv/bin/pip').exists(): print('.venv/bin/')")
 USING_POETRY=$(shell grep "tool.poetry" pyproject.toml && echo "yes")
+# grep .env if it exists else return empty string
 USING_DOCKER=$(shell grep "USE_DOCKER=true" .env && echo "yes")
 USING_PNPM=$(shell python3 -c "if __import__('pathlib').Path('pnpm-lock.yaml').exists(): print('yes')")
 USING_YARN=$(shell python3 -c "if __import__('pathlib').Path('yarn.lock').exists(): print('yes')")
@@ -156,10 +157,13 @@ pre-release: ## Run the pre-release cycle; builds docs, cleans stale files, bump
 # =============================================================================
 
 docs-clean: ## Dump the existing built docs
-	rm -rf docs/_build
+	make clean
 
 docs-serve: ## Serve the docs locally
-	sphinx-autobuild docs docs/_build/ -j auto --watch app --watch tests
+	make clean
+	poetry run mkdocs build
+	poetry run mkdocs serve
 
 docs: docs-clean ## Dump the existing built docs and rebuild them
-	sphinx-build -M html docs docs/_build/ -E -a -j auto --keep-going
+	make clean
+	poetry run mkdocs build

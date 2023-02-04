@@ -1,0 +1,18 @@
+site_name: Starlite Barebones Template
+repo_url: https://github.com/JacobCoffee/starlite-barebones-template
+edit_uri: ./edit/main/docs
+
+theme:
+  name: "material"
+
+plugins:
+  - search
+  - mkdocstrings
+
+nav:
+  - Home: index.md
+  - Usage Guide:
+      - Installation: usage_guide/installation.md
+      - Setup: usage_guide/developer_setup.md
+      - Workflows: usage_guide/workflows.md
+      - Releases: usage_guide/releases.md
