@@ -58,7 +58,7 @@ test: ## Run tests with coverage
 	env PYTHONPATH=app/ poetry run coverage html
 
 pytest: ## Run tests using pytest directly
-	pytest tests
+	poetry run pytest tests
 
 # =============================================================================
 # App
@@ -84,7 +84,6 @@ runtime-only: ## Install in Prod Mode
 	if [ "$(USING_POETRY)" ]; then poetry config virtualenvs.in-project true  && poetry config virtualenvs.options.always-copy true && python3 -m venv .venv && source .venv/bin/activate && .venv/bin/pip install -U wheel setuptools cython pip && poetry install --only main && mkdir -p ./app/public ; fi
 	if [ "$(USING_NPM)" ]; then npm install; fi
 	@echo "=> Install complete.  ** If you want to re-install re-run 'make runtime'"
-
 
 .PHONY: migrations
 migrations: ## Run DB Migrations
@@ -129,6 +128,8 @@ clean: ## File Cleanup
 	rm -rf site
 	rm -f app/static/generated/*
 
+
+# ! TODO: Fix this
 download-backend-deps: ## Get Dependencies for Backend
 	@poetry export --without-hashes --only=main -f requirements.txt --output dist/requirements.txt && rm -Rf dist/wheels && poetry run pip download --no-binary=':all:'  -r dist/requirements.txt -d dist/wheels
 
