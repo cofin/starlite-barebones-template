@@ -27,9 +27,6 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
-extra:
-  version:
-    provider: mike
 plugins:
   - search
   - mkdocstrings
@@ -40,3 +37,6 @@ nav:
       - Setup: usage_guide/developer_setup.md
       - Workflows: usage_guide/workflows.md
       - Releases: usage_guide/releases.md
+extra:
+  version:
+    provider: mike
