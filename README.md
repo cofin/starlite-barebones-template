@@ -1,3 +1,4 @@
+[![ci](https://github.com/JacobCoffee/starlite-barebones-template/actions/workflows/ci.yml/badge.svg)](https://github.com/JacobCoffee/starlite-barebones-template/actions/workflows/ci.yml)
 [![docs](https://github.com/JacobCoffee/starlite-barebones-template/actions/workflows/docs.yml/badge.svg)](https://github.com/JacobCoffee/starlite-barebones-template/actions/workflows/docs.yml)
 
 # [Starlite API Framework](https://github.com/starlite-api/starlite) Barebones Template
