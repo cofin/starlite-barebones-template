@@ -1,7 +1,7 @@
 # Starlite Barebones Template
-#### A production-ready, barebones template for the [Starlite API Framework](https://github.com/starlite-api/starlite)
+A production-ready, minimal template for the [Starlite API Framework](https://github.com/starlite-api/starlite)
 
-### Starlite Upstream Status
+## Starlite Upstream Status
 [![PyPI version](https://badge.fury.io/py/starlite.svg)](https://badge.fury.io/py/starlite)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/starlite-api/starlite/publish.yaml)](https://img.shields.io/github/actions/workflow/status/starlite-api/starlite/publish.yaml)
 
