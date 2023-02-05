@@ -7,12 +7,12 @@ A production-ready, minimal template for the [Starlite API Framework](https://gi
 
 
 
-#### Key:
-[x] = Included
+> Key:
+> - [x] = Included
+> - [ ] = Not Included (Yet)
+>
+> If you don't see a specific package it probably means it is not planned (Want it? [Open an issue!](https://github.com/JacobCoffee/starlite-barebones-template/issues/new/choose))
 
-[ ] = Not Included (Yet)
-
-If you don't see a specific package it probably means it is not planned (Want it? [Open an issue!](https://github.com/JacobCoffee/starlite-barebones-template/issues/new/choose))
 
 ## Features
 
