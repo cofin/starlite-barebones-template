@@ -5,12 +5,16 @@ A production-ready, minimal template for the [Starlite API Framework](https://gi
 [![PyPI version](https://badge.fury.io/py/starlite.svg)](https://badge.fury.io/py/starlite)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/starlite-api/starlite/publish.yaml)](https://img.shields.io/github/actions/workflow/status/starlite-api/starlite/publish.yaml)
 
-## Features
+
 
 #### Key:
 [x] = Included
+
 [ ] = Not Included (Yet)
-Unlisted = Not Planned (Want it? [Open an issue!](https://github.com/JacobCoffee/starlite-barebones-template/issues/new/choose))
+
+If you don't see a specific package it probably means it is not planned (Want it? [Open an issue!](https://github.com/JacobCoffee/starlite-barebones-template/issues/new/choose))
+
+## Features
 
 - [x] Starlite API Framework plus some extras:
     - [x] `uvicorn`
