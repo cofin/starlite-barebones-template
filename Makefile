@@ -127,6 +127,7 @@ clean: ## File Cleanup
 	rm -rf .mypy_cache
 	rm -rf .ruff_cache
 	rm -rf site
+	rm -f app/static/generated/*
 
 download-backend-deps: ## Get Dependencies for Backend
 	@poetry export --without-hashes --only=main -f requirements.txt --output dist/requirements.txt && rm -Rf dist/wheels && poetry run pip download --no-binary=':all:'  -r dist/requirements.txt -d dist/wheels

@@ -22,6 +22,7 @@ A production-ready, minimal template for the [Starlite API Framework](https://gi
     * `[uvicorn](https://www.uvicorn.org/)`
     * `[python-dotenv](https://github.com/theskumar/python-dotenv)`
     * `[structlog](https://www.structlog.org/en/stable/)`
+    * `[TailwindCSS](https://tailwindcss.com/)`
 - [x] GitHub Actions
     - [x] CI Testing
     - [x] Document Generation
