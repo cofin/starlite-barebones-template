@@ -26,6 +26,16 @@ ___
 ## Getting Started
 1. Run `poetry install` (optionally, you can pass in addons listed above [Optional Extras](#optional-extras))
 2. Run `uvicorn app.asgi:app --reload` to start the app.
+3. Visit `localhost:8000`
+
+### Media
+Home Page
+![image](https://user-images.githubusercontent.com/45884264/216846442-5f06f3df-2457-420b-beb9-7c043ebbfcc0.png)
+
+API - Swagger
+![image](https://user-images.githubusercontent.com/45884264/216846490-4fce9db7-4b52-4be9-bd25-ae12bc417d77.png)
+
+
 
 ### Makefile
 This project includes a `Makefile` with some useful commands (available by running `make help`)
