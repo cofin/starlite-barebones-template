@@ -31,12 +31,12 @@ repos:
     - id: codespell
       additional_dependencies:
         - tomli
+      exclude: >
+            (?x)^(
+                .*\.json
+            )$
   - repo: https://github.com/compilerla/conventional-pre-commit
     rev: v2.1.1
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
-        exclude: >
-            (?x)^(
-                package-lock.json
-            )$
