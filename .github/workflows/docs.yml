@@ -1,24 +1,30 @@
+
 name: docs
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  workflow_run:
+    workflows: ["ci"]
+    branches: [main]
+    types:
+      - completed
 jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
       - uses: actions/setup-python@v4
         with:
           python-version: "3.11"
+          
       - name: Install Poetry
         uses: snok/install-poetry@v1
         with:
           virtualenvs-create: false
           installer-parallel: true
+          
       - name: Install App Dependencies
         run: poetry install --no-interaction --with docs
+        
       - name: Deploy MkDocs
         uses: mhausenblas/mkdocs-deploy-gh-pages@1.26
 
