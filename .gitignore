@@ -112,3 +112,12 @@ dmypy.json
 .pyre/
 .pytype/
 cython_debug/
+/.idea/.gitignore
+/.idea/discord.xml
+/.idea/git_toolbox_prj.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/starlite-barebones-template.iml
+/.idea/vcs.xml
