@@ -1,12 +1,56 @@
 # -*- coding: utf-8 -*-
 """Basic application for Starlite ASGI Framework"""
-from starlite import Starlite, get
+from pathlib import Path
+
+from starlite import MediaType, Starlite, StaticFilesConfig, Template, TemplateConfig, get
+from starlite.contrib.jinja import JinjaTemplateEngine
 
 
-@get("/")
-def hello_world() -> dict[str, str]:
-    """A simple hello world endpoint."""
-    return {"hello": "world"}
+@get(
+    path="/",
+    media_type=MediaType.HTML,
+    cache=False,
+    tags=["Index"],
+    include_in_schema=False,
+    opt={"exclude_from_auth": True},
+    name="index",
+)
+async def index() -> Template:
+    """The index page using Jinja2 template engine.
+
+    The templates are located in the templates directory.
+    Context variables are passed to the template.
+    """
+    return Template(
+        name="index.html",
+        context={"title": "Home"},
+    )
 
 
-app = Starlite(route_handlers=[hello_world])
+@get(name="ping", path="/ping", tags=["Ping"])
+def ping_pong() -> dict[str, str]:
+    """A simple test world endpoint."""
+    return {"ping": "pong"}
+
+
+app = Starlite(
+    route_handlers=[
+        index,
+        ping_pong,
+    ],
+    template_config=TemplateConfig(
+        directory=Path(__file__).parent / "templates",
+        engine=JinjaTemplateEngine,
+    ),
+    static_files_config=[
+        StaticFilesConfig(directories=[Path(__file__).parent / "static"], path="static"),
+        StaticFilesConfig(
+            directories=[Path(__file__).parent / "templates"],
+            path="templates",
+            html_mode=True,
+            opt={"exclude_from_auth": True},
+        ),
+        StaticFilesConfig(directories=[Path(__file__).parent.parent / "docs"], path="/docs", html_mode=True),
+    ],
+    debug=True,
+)

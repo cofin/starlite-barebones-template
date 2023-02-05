@@ -169,3 +169,11 @@ docs-serve: ## Serve the docs locally
 docs: docs-clean ## Dump the existing built docs and rebuild them
 	make clean
 	poetry run mkdocs build
+
+
+# =============================================================================
+# Workflow
+# =============================================================================
+run-dev: ## Run the uvicorn server and TailwindCSS with hot reloading
+	@poetry run tailwindcss -i app/static/input.css -o app/static/generated/tailwind.css --minify --watch &
+	@poetry run uvicorn app.asgi:app --reload
