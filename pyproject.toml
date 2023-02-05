@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "starlite-barebones-template"
-version = "0.1.1"
+version = "0.2.0"
 description = "Starlite API barebones template project"
 authors = ["Jacob Coffee <jacob@z7x.org>"]
 license = "Apache-2.0"
