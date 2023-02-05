@@ -6,12 +6,10 @@
 ## WIP
 
 #### Provides a basic template for a Starlite API Framework project including these options out-of-the-box:
-- [x] Starlite API Framework
-- [x] `uvicorn`
-- [x] `python-dotenv`
-- [x] `structlog`
-- [x] `msgspec`
-- [x] `pydantic`
+- [x] Starlite API Framework plus some extras:
+    * `[uvicorn](https://www.uvicorn.org/)`
+    * `[python-dotenv](https://github.com/theskumar/python-dotenv)`
+    * `[structlog](https://www.structlog.org/en/stable/)`
 - [x] GitHub Actions
   - [x] `Testing`
   - [x] Document Generation
