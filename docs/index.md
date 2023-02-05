@@ -56,5 +56,5 @@ A production-ready, minimal template for the [Starlite API Framework](https://gi
         - [ ] Package releases to [PyPI](https://pypi.org/) with dynamic versioning provided by [bump2version](https://github.com/c4urself/bump2version) begin automatically whenever a new tag is created in github.
         - [ ] Metadata and dependency information is stored in the pyproject.toml for compatibility with both [pip](https://pip.pypa.io/en/stable/) and [poetry](https://python-poetry.org/docs/).
 - Front End
-   - [x] `tailwindcss` for beautiful CSS
+    - [x] `tailwindcss` for beautiful CSS
     - [x] `Jinja2` for templating
