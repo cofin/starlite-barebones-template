@@ -3,6 +3,7 @@ repo_url: https://github.com/JacobCoffee/starlite-barebones-template
 edit_uri: ./edit/main/docs
 
 theme:
+  name: material
   palette:
 
     # Palette toggle for automatic mode
