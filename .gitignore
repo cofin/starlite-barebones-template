@@ -121,3 +121,4 @@ cython_debug/
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/starlite-barebones-template.iml
 /.idea/vcs.xml
+app/static/generated/*
