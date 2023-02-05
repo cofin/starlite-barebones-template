@@ -7,6 +7,8 @@
 
 ## Features
 
+> Key: [x] = Included, [ ] = Not Included (Yet), Unlisted = Not Planned (Want it? Open an issue!)
+
 - [x] Starlite API Framework plus some extras:
     - [x] `uvicorn`
     - [x] `python-dotenv`
