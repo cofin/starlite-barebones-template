@@ -19,11 +19,11 @@ A production-ready, minimal template for the [Starlite API Framework](https://gi
 ## Features
 
 - [x] [Starlite API Framework](https://starlite-api.github.io/starlite/) plus some extras:
-    * `[uvicorn](https://www.uvicorn.org/)`
-    * `[python-dotenv](https://github.com/theskumar/python-dotenv)`
-    * `[structlog](https://www.structlog.org/en/stable/)`
-    * `[TailwindCSS](https://tailwindcss.com/)`
-- [x] GitHub Actions
+    * [`uvicorn`](https://www.uvicorn.org/)
+    * [`python-dotenv`](https://github.com/theskumar/python-dotenv)
+    * [`structlog`](https://www.structlog.org/en/stable/)
+    * [`TailwindCSS`](https://tailwindcss.com/)
+- [x] CI via GitHub Actions
     - [x] CI Testing
     - [x] Document Generation
 - [x] `Makefile` with useful commands
