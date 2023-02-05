@@ -19,11 +19,11 @@ A production-ready, minimal template for the [Starlite API Framework](https://gi
 ## Features
 
 - [x] Starlite API Framework plus some extras:
-    - [x] `uvicorn`
-    - [x] `python-dotenv`
-    - [x] `structlog`
-    - [x] `msgspec`
-    - [x] `pydantic`
+    * `uvicorn`
+    * `python-dotenv`
+    * `structlog`
+    * `msgspec`
+    * `pydantic`
 - [x] GitHub Actions
     - [x] CI Testing
     - [x] Document Generation
