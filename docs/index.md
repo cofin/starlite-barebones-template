@@ -7,7 +7,10 @@ A production-ready, minimal template for the [Starlite API Framework](https://gi
 
 ## Features
 
-> Key: [x] = Included, [ ] = Not Included (Yet), Unlisted = Not Planned (Want it? Open an issue!)
+> Key:
+[x] = Included
+[ ] = Not Included (Yet)
+Unlisted = Not Planned (Want it? [Open an issue!](https://github.com/JacobCoffee/starlite-barebones-template/issues/new/choose))
 
 - [x] Starlite API Framework plus some extras:
     - [x] `uvicorn`
